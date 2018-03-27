@@ -17,8 +17,26 @@
 }
 #hero div{
     width: 100vw;
+    margin-top:30vh;
     margin-left: 5vw;
     margin-right: 5vw;  
+}
+.outsideLink{   
+    box-sizing: border-box;
+    padding: 0px;
+}
+.outsideLink a{
+    color:inherit;
+    font-size: 5vw;
+    text-decoration: none;
+}
+.outsideLink ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.outsideLink ul li{
+    display: inline;
 }
 #hero h1{
     font-size: 20vw
@@ -26,6 +44,8 @@
 #hero span{
     font-size: 18px;
 }
+
+
 @media (min-width: 768px){
     #hero h1{
         font-size: 154px;
@@ -33,5 +53,7 @@
     #hero span{
         font-size: 18px;
     }
-    
+    .outsideLink a{
+        font-size: 38px;
+    }
 }
