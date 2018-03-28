@@ -27,7 +27,7 @@
 }
 .outsideLink a{
     color:inherit;
-    font-size: 5vw;
+    font-size: 8vw;
     text-decoration: none;
 }
 .outsideLink ul{
@@ -44,7 +44,21 @@
 #hero span{
     font-size: 18px;
 }
-
+.conTypeA{
+    display: flex;
+    height: 100vh;
+    min-height: 390px;
+    background-color: #fff;
+}
+.Doc{
+    width: 100vw;
+    margin-top: 4vh;
+    margin-left: 5vw;
+    margin-right: 5vw;  
+}
+.Doc h1{
+    font-size:10vw;
+}
 
 @media (min-width: 768px){
     #hero h1{
@@ -54,6 +68,9 @@
         font-size: 18px;
     }
     .outsideLink a{
-        font-size: 38px;
+        font-size: 61px;
+    }
+    .Doc h1{
+        font-size:77px;
     }
 }
