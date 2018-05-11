@@ -35,30 +35,17 @@
 #hero .content{
     width: 90vw;
     margin-left: 5vw;
-    margin-right: 5vw;  
-}
-.outsideLink{   
-    display: inline-block;
-}
-.outsideLink a{
-    color:inherit;
-    font-size: 8vw;
-    text-decoration: none;
-}
-.outsideLink ul{
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-}
-.outsideLink ul li{
-    display: inline-block;
+    margin-right: 5vw;
+    /*
+    animation: fadein 2s;
+    */
+    opacity: 1;
 }
 #hero h1{
     font-size: 20vw;
 }
 .ProfileImage{
     display: inline-block;
-
 }
 .ProfileImage img{
     width: 15vw;
@@ -110,7 +97,7 @@
     position: absolute;
     box-sizing: border-box;
     left: 5vw;
-    bottom: 5vw;
+    bottom: 10vw;
     width: 30px;
     height: 50px;
     border-radius: 15px;
