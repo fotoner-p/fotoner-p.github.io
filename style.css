@@ -5,25 +5,40 @@
     font-family: 'Nanum Square','맑은 고딕','Apple SD Gothic Neo', sans-serif;
 }
 #hero{
-    display: flex;
-    align-items: center;
+    display:flex;
+    position:fixed;
+    align-items:center;
     height: 100vh;
     min-height: 390px;
-    background-color: #7E6CA8;
+    background-color: #15121C;
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     color: #ffffff;
     text-align: right;
 }
-#hero div{
-    width: 100vw;
-    margin-top:30vh;
+#hero:after{
+    position: fixed;
+    width: 300px;
+    height: auto;
+    background: #7E6CA8;
+    content: ""; 
+    /*text-align: center;
+    color: #fff;
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 20px;*/
+    padding: 15px;
+    left: -100px;
+    top: 40px;
+    transform: rotate(-45deg);
+}
+#hero .content{
+    width: 90vw;
     margin-left: 5vw;
     margin-right: 5vw;  
 }
 .outsideLink{   
-    box-sizing: border-box;
-    padding: 0px;
+    display: inline-block;
 }
 .outsideLink a{
     color:inherit;
@@ -36,18 +51,34 @@
     list-style: none;
 }
 .outsideLink ul li{
-    display: inline;
+    display: inline-block;
 }
 #hero h1{
-    font-size: 20vw
+    font-size: 20vw;
 }
-#hero span{
-    font-size: 18px;
+.ProfileImage{
+    display: inline-block;
+
+}
+.ProfileImage img{
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover;
+    border-radius: 50%;
+    border:3px solid darkslateblue;
+}
+.infobox{
+    display: inline-block;
+    text-align: left;
+    font-size:3vw;
 }
 .conTypeA{
     display: flex;
+    position: absolute;
+    margin-top: 100vh;
     height: 100vh;
     min-height: 390px;
+    width: 100%;
     background-color: #fff;
 }
 .Doc{
@@ -59,13 +90,63 @@
 .Doc h1{
     font-size:10vw;
 }
+.navbar{
+    display: flex;
+    position: fixed;
+    z-index: -2; 
+    background-color:dimgrey;
+    width: 100vw;
+    height: 10vh
+}
+.Blink{
+    text-decoration:blink;  
+    -webkit-animation-name: blinker;
+	-webkit-animation-duration: 0.8s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-direction: alternate;
+}
+.mouse {
+    position: absolute;
+    box-sizing: border-box;
+    left: 5vw;
+    bottom: 5vw;
+    width: 30px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid #ffffff;
+}
 
+.mouse__wheel {
+    position: absolute;
+    left: 50%;
+    margin-left: -2px;
+    top: 8px;
+    width: 4px;
+    height: 9px;
+    background: #ffffff;
+    border-radius: 2px;
+    animation: mouse-wheel 1.2s infinite linear;
+    transform-origin: 50% 0%
+}
+
+@keyframes mouse-wheel {
+    0% {
+        transform: scaleY(.4) translateY(0)
+    }
+    20% {
+        transform: scaleY(1) translateY(0)
+    }
+    60% {
+        transform: scaleY(.4) translateY(12px)
+    }
+    100% {
+        transform: scaleY(.4) translateY(0)
+    }
+}
 @media (min-width: 768px){
     #hero h1{
         font-size: 154px;
-    }
-    #hero span{
-        font-size: 18px;
     }
     .outsideLink a{
         font-size: 61px;
@@ -73,4 +154,17 @@
     .Doc h1{
         font-size:77px;
     }
+    .ProfileImage img{
+        width: 115px;
+        height: 115px;
+    }
+    .infobox{
+        font-size: 22px;
+    }
+}
+@-webkit-keyframes blinker {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
 }
