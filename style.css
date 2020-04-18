@@ -1,117 +1,148 @@
 @charset "UTF-8";
-
 *{
     margin : 0px;
     padding : 0px;
-    font-family: 'Nanum Square','맑은 고딕','Apple SD Gothic Neo', sans-serif;
+    font-family: 'Noto Sans KR', 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+}
+
+:root{
+    background-color: #262133;
 }
 
 #hero{
-    align-items:center;
     background-color: #262133;
     background-position: center;
     background-size:cover;
     color: #ffffff;
-    text-align: right;
+    text-align: center;
 }
 
 #hero .content{
-    width: 90vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
     opacity: 1;
+    padding-top: 3rem;
 }
-#hero h1{
-    font-size: 20vw;
-}
-.ProfileImage{
-    display: inline-block;
-}
-.ProfileImage img{
-    width: 15vw;
-    height: 15vw;
-    object-fit: cover;
-    border-radius: 50%;
-    border:3px solid #7E6CA8;
-}
-.infobox{
-    display: inline-block;
-    text-align: left;
-    font-size:3vw;
-}
+
 .conTypeA{
     background-color: #262133;
-    display: flex;
+    display: inline-block;
     position: absolute;
-    height: 100%;
     margin-bottom:auto;
     min-height: 390px;
     width: 100%;
 }
-.Doc{
 
+.Doc{
     background-color: #fff;
-    width: 100vw;
-    padding-top: 4vh;
+    width: 100%;
+    margin-bottom: auto;
+}
+
+#pBand{
+    background-color:#ff4ea4;
+    height: 5px;
+    margin-bottom: 2px;
+}
+#fBand{
+    background-color:#0470ff;
+    height: 5px;
+    margin-bottom: 2px;
+}
+#aBand{
+    background-color:#ffce01;
+    height: 5px;
+    margin-bottom: 2px;
+}
+
+#docContents{
     padding-left: 5vw;
     padding-right: 5vw;
     padding-bottom: 4vh;
-    margin-bottom: auto;
 }
-.Doc h1{
-    font-size:10vw;
+
+#docContents ul{
+    padding-left: 3rem;
+}
+#docContents li{
 
 }
-.Doc img{
-    padding:20px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+
+#docContents h2{
+    margin-top: 1rem;
 }
-.Blink{
-    text-decoration:blink;  
-    animation-name: blinker;
-	animation-duration: 0.8s;
-	animation-iteration-count:infinite;
-	animation-timing-function:ease-in-out;
-	animation-direction: alternate;
+#docContents a{
+    color: #7E6CA8;
+    text-decoration: none;
 }
+
+
+.Doc h1{
+    color: #7E6CA8;
+    font-size: 5rem;
+}
+.Doc h2{
+    color: #7E6CA8;
+    font-size: 2rem;
+}
+.ProfileImage{
+    text-align: center;
+    margin-top: 2rem;
+    display : block ;
+    text-align : center ;
+}
+
+.ProfileImage img{
+    display : inline-block;
+    width: 10rem;
+    height: 10rem;
+    padding:0px;
+
+    object-fit: cover;
+    border-radius: 50%;
+    border:3px solid #7E6CA8;
+}
+
 
 @media (min-width: 768px){
-    #hero h1{
-        font-size: 154px;
-    }
     #hero .content{
-        width:768px;
+        width:688px;
+        padding-left: 40px;
+        padding-right: 40px;
         margin-left:auto;
         margin-right:auto;
-    }
-    .outsideLink a{
-        font-size: 61px;
     }
     .Doc h1{
-        font-size:77px;
+        color:#7E6CA8;
     }
-    .ProfileImage img{
-        width: 115px;
-        height: 115px;
-    }
-    .infobox{
-        font-size: 22px;
-    }
-    .Doc{
 
+    .pBand{
+        height: 5px;
         width:768px;
         margin-left:auto;
         margin-right:auto;
-
+    }
+    .fBand{
+        height: 5px;
+        width:768px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .aBand{
+        height: 5px;
+        width:768px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .Doc{
+        width:768px;
+        margin-left:auto;
+        margin-right:auto;       
+    }
+    #docContents{
         padding-left:40px;
         padding-right:40px;
     }
-}
-@keyframes blinker {
-	0% { opacity: 1; }
-	50% { opacity: 1; }
-	50.01% { opacity: 0; }
-	100% { opacity: 0; }
 }
