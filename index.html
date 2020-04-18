@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="image/Favicon.ico">
+
 </head>
 
 <body>
@@ -40,10 +41,14 @@
                     <a href="https://twitter.com/Fotoner_P">
                          <img src="image/noframe2709.jpg" alt="Fotone Twitter img">
                     </a>
-                    <h1>Fotone</h1>
+                    <br>
+                    <h1>Fotone</h1> 
+                    <!--<span style="color:#7E6CA8">ポトネ</span>-->
                 </div>
 
                 <h2>About & Interested</h2>
+                여러가지 해보는 걸 좋아해요
+                <br> 
                 Undergraduate | オタク | アイマス(ミリ) | 夏川椎菜推し | Programing | Anison DJing
  
                 <h2>Contact</h2>
@@ -57,11 +62,21 @@
                     <li><a href="https://github.com/fotoner-p">Github</a></li>
                     -->
                     <li><a href="steamcommunity.com/id/Fotoner_P">Steam</a></li> 
-                    <li>ミリシタ : 4D9DLA7G(日) | HQ46WK87(韓)</li>
+                    <li>ミリシタ(日) : <a id="mltdJP" onclick="displayJPModal()">4D9DLA7G</a></li>
+                    <li>ミリシタ(韓) : HQ46WK87</li>
                     <li>Discord : Fotone#5998 </li>
                 </ul>
             </article>
         </div>
     </section>
+    <div id="mltdQR" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <br>                                                               
+            <img src="image/mltd_JP_QR.jpg">
+        </div>
+    </div>
+  
 </body>
+<script src="modal.js"></script>    
 </html>
